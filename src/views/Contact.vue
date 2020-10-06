@@ -1,12 +1,12 @@
 <template>
   <div class="contact">
     <h1>This is an contact page</h1>
-    {{ $route.params.foo }}
+    {{ $route.params.foo }} <!-- 라우터 변수를 그대로 사용 -->
     {{ $route.params.bar }}
     <hr>
-    {{ foo }} {{ bar }}
+    {{ foo }} {{ bar }} <!-- props: [ ... ] 변수로 지정해서 사용 -->
     <hr>
-    {{ myFoo }} {{ myBar }}
+    {{ myFoo }} {{ myBar }} <!-- 클래스 변수에 담아서 사용 -->
   </div>
 </template>
 <script lang="ts">
